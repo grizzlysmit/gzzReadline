@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libgzz_readline.so.0 -o libgzz_readline.so.0.0.1 CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o  -lreadline 

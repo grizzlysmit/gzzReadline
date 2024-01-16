@@ -1,0 +1,39 @@
+Architecture: amd64
+Depends: libreadline8, libreadline-dev
+Description: Extension to Gnu Readline to get a prompt with a default value
+ Desciption
+ ==========
+ .
+ This is a prompt package based on gnu readline.
+ The only difference is that it supports prefilling the edit buffer with text to edit, so it is easier to fix your mistakes and/or start with the previous value or whatever value the developer wants to supply.
+ It’s licence is GPL v3 or above, enjoy.
+ .
+ To use in C/C++  the function is 
+ ```C
+ gzzreadline(char *prompt, char *prefill)
+ ```
+ .
+ where 
+  - **prompt** is the prompt.
+  - **prefill** is the value to prefill the input buffer with. 
+ .
+  dont&apos;t forget to `free(value)` at the end as it was malloc&apos;d 
+ .
+ ```C
+ #include &lt;gzz_readline.h&gt;
+ #include &lt;stdlib.h&gt;
+ .
+ int main(){
+     char *value = gzzreadline(&quot;hello &gt; &quot;, &quot;fred&quot;); // this is the function //
+     printf(&quot;value == %s\n&quot;, value);
+     free(value);
+ }
+ ```
+ .
+Maintainer: grizzlysmit@smit.id.au
+Package: gzz_readline
+Priority: optional
+Section: devel
+Version: 0.0.1
+Installed-Size: 100
+
