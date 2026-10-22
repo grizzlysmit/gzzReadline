@@ -1,8 +1,8 @@
 .*.swp
-build/*.gz
-build/*.deb
-build/*.so
-build/*.so.*
+*.gz
+*.deb
+*.so
+*.so.*
 archive/
 lib/.precomp/
 
