@@ -2,7 +2,6 @@ class Build {
     method build($dist-path) {
         # do build stuff to your module
         # which is located at $dist-path
-        dd %?RESOURCES;
         my IO::Path $CWD = $*CWD;
         my Str:D $path  = "/usr/lib/perl6/site/bin";
         my Str:D $local = "/usr/local";
@@ -18,14 +17,7 @@ class Build {
 
         $r = run         'apt-get', 'reinstall',  '--yes', "build-essential";
         $r = run         'apt-get', 'reinstall',  '--yes', "cmake";
-        $r = run         'apt-get', 'reinstall',  '--yes', "vim-nox";
-        $r = run         'apt-get', 'reinstall',  '--yes', "python3-dev";
-        $r = run         'apt-get', 'reinstall',  '--yes', "mono-complete";
-        $r = run         'apt-get', 'reinstall',  '--yes', "golang";
-        $r = run         'apt-get', 'reinstall',  '--yes', "nodejs";
-        $r = run         'apt-get', 'reinstall',  '--yes', "openjdk-17-jdk";
-        $r = run         'apt-get', 'reinstall',  '--yes', "openjdk-17-jre";
-        $r = run         'apt-get', 'reinstall',  '--yes', "npm";
+        $r = run         'apt-get', 'reinstall',  '--yes', "make";
         $r = run         'apt-get', 'reinstall',  '--yes', "g++";
         chdir($CWD);
     }
