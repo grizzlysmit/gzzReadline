@@ -1,0 +1,15 @@
+{
+    "name": "Gzz::Readline",
+    "lib": "rakulib",
+    "markdown-path": "doc/Gzz/README.md",
+    "docs": "doc",
+    "exts": [
+        "rakudoc"
+    ],
+    "comment": "zef/fez (https://raku.land/) intergration.",
+    "only-app": false,
+    "separate-markdown-files": false,
+    "bin": "bin",
+    "additional-pod-files": [
+    ]
+}
