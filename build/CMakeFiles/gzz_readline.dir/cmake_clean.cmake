@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  ".0"
+  "CMakeFiles/gzz_readline.dir/link.d"
   "CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o"
   "CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o.d"
   "CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o"

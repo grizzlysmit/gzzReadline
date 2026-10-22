@@ -1,0 +1,39 @@
+{ 
+    "meta-version": 1,
+    "name"          : "Gzz::Readline",
+    "version"       : "0.0.2",
+    "perl"          : "6.c",
+    "auth":           "zef:grizzlysmit",
+    "authors": [
+        "Francis Grizzly Smit <grizzly@smit.id.au>"
+    ],
+    "description"   : "Extension to Gnu Readline to get a prompt with a default value",
+    "license": "LGPL-3.0-or-later",
+    "version": "0.1.2",
+    "perl": "6.d",
+    "source-url": "https://github.com/grizzlysmit/gzzReadline.git",
+    "support": {
+    "bugtracker": "https://github.com/grizzlysmit/gzzReadline/issues",
+    "source":     "https://github.com/grizzlysmit/gzzReadline.git",
+    "email": "grizzly@smit.id.au"
+    },
+    "provides": {
+    },
+    "depends": [
+    ],
+    "tags": [
+        "readline",
+        "prompt",
+        "edit",
+        "prefill",
+        "cli",
+        "term",
+        "terminal",
+        "C"
+    ],
+    "builder": "Distribution::Builder::Cmake",
+    "build": {
+        "lib": "gzz_readline",
+        "src-dir": "."
+    }
+}
