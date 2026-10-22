@@ -1,0 +1,6 @@
+/usr/local/lib/libgzz_readline.so.0.0.1
+/usr/local/lib/libgzz_readline.so.0
+/usr/local/lib/libgzz_readline.so
+/usr/local/include/gzz_readline.h
+/usr/local/lib/pkgconfig/gzz_readline.pc
+/usr/local/share/doc/gzz_readline/changelog.gz

@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: gzz_readline
+Description: Extension to Gnu Readline to get a prompt with a default value
+Version: 0.0.1
+Requires:
+Libs: -L${libdir} -lgzz_readline
+Cflags: -I${includedir}
