@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-chmod +x /usr/local/lib/libgzz_readline.so.0.0.1
-/usr/sbin/ldconfig
-# vim: set filetype=sh

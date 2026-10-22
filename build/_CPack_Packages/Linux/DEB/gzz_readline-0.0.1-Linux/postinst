@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-/usr/sbin/ldconfig
-# vim: set filetype=sh
