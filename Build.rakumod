@@ -44,7 +44,7 @@ class Build {
                                                                      } );
         my $lib_ =       @libs.pop();
         for @libs -> $lib {
-            my $name =       $lib_.basename;
+            my $name =       $lib.basename;
             if $lib ~~ :l {
                 my $target = readlink($lib.path);
                 "$local/lib/$name".IO.symlink($target.IO.basename.IO, :!absolute);
