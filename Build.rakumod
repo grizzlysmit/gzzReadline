@@ -23,12 +23,15 @@ class Build {
         $r = run         'apt-get', 'reinstall',  '--yes', "make";
         $r = run         'apt-get', 'reinstall',  '--yes', "g++";
         #chdir($CWD);
-        chdir("build".IO);
+        chdir("resources/build".IO);
+        #`«««
         $r = run         'cmake', '..';
         $r = run         'make';
         $r = run         'make', 'all';
         $r = run         'make', 'package';
+        #»»»
 
+        #`«««
         my @debs =       dir('.', test => { "./$_".IO.f && $_ ~~ rx/ ^^ 'gzz_readline' .* '.deb' $$ / }) 
                                                               .sort( { 
                                                                         rx/ ^^ 'gzz_readline-' (\d+ [ \. \d+ [ \. \d ]? ]? ) '-' .* '.deb' $$ / 
@@ -38,7 +41,6 @@ class Build {
         my $deb  =       @debs.pop();
         dd @debs, $deb;
         $r = run         'dpkg', '--install', "$deb";
-        #«««
         my @libs =       dir('.', test => { "./$_".IO.f && $_ ~~ rx/ ^^ 'libgzz_readline.so' .* $$ / }) 
                                                               .sort( { 
                                                                         rx/ ^^ 'gzz_readline.so' \. ( \d+ [ \. \d+ [ \. \d ]? ]? ) $$ / 

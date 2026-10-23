@@ -51,6 +51,6 @@
     "builder": "Distribution::Builder::Cmake",
     "build": {
         "lib": "gzz_readline",
-        "src-dir": "."
+        "src-dir": "resources"
     }
 }
