@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/grizzlysmit/Projects/C++/gzzReadline/build/cmake_install.cmake"
+		"/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

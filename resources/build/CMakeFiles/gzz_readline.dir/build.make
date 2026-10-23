@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/grizzlysmit/Projects/C++/gzzReadline
+CMAKE_SOURCE_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/build
+CMAKE_BINARY_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/resources/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gzz_readline.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/gzz_readline.dir/codegen:
 .PHONY : CMakeFiles/gzz_readline.dir/codegen
 
 CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o: CMakeFiles/gzz_readline.dir/flags.make
-CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o: /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_rlprivate.c
+CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o: /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_rlprivate.c
 CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o: CMakeFiles/gzz_readline.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o -MF CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o.d -o CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o -c /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_rlprivate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o -MF CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o.d -o CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o -c /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_rlprivate.c
 
 CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_rlprivate.c > CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_rlprivate.c > CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.i
 
 CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_rlprivate.c -o CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_rlprivate.c -o CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.s
 
 CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o: CMakeFiles/gzz_readline.dir/flags.make
-CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o: /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.c
+CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o: /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.c
 CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o: CMakeFiles/gzz_readline.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o -MF CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o.d -o CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o -c /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o -MF CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o.d -o CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o -c /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.c
 
 CMakeFiles/gzz_readline.dir/source/gzz_readline.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gzz_readline.dir/source/gzz_readline.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.c > CMakeFiles/gzz_readline.dir/source/gzz_readline.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.c > CMakeFiles/gzz_readline.dir/source/gzz_readline.c.i
 
 CMakeFiles/gzz_readline.dir/source/gzz_readline.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gzz_readline.dir/source/gzz_readline.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.c -o CMakeFiles/gzz_readline.dir/source/gzz_readline.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.c -o CMakeFiles/gzz_readline.dir/source/gzz_readline.c.s
 
 # Object files for target gzz_readline
 gzz_readline_OBJECTS = \
@@ -113,7 +113,7 @@ libgzz_readline.so.0.0.2: CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o
 libgzz_readline.so.0.0.2: CMakeFiles/gzz_readline.dir/build.make
 libgzz_readline.so.0.0.2: CMakeFiles/gzz_readline.dir/compiler_depend.ts
 libgzz_readline.so.0.0.2: CMakeFiles/gzz_readline.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libgzz_readline.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libgzz_readline.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gzz_readline.dir/link.txt --verbose=$(VERBOSE)
 	$(CMAKE_COMMAND) -E cmake_symlink_library libgzz_readline.so.0.0.2 libgzz_readline.so.0 libgzz_readline.so
 
@@ -132,6 +132,6 @@ CMakeFiles/gzz_readline.dir/clean:
 .PHONY : CMakeFiles/gzz_readline.dir/clean
 
 CMakeFiles/gzz_readline.dir/depend:
-	cd /home/grizzlysmit/Projects/C++/gzzReadline/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/grizzlysmit/Projects/C++/gzzReadline /home/grizzlysmit/Projects/C++/gzzReadline /home/grizzlysmit/Projects/C++/gzzReadline/build /home/grizzlysmit/Projects/C++/gzzReadline/build /home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles/gzz_readline.dir/DependInfo.cmake "--color=$(COLOR)" gzz_readline
+	cd /home/grizzlysmit/Projects/C++/gzzReadline/resources/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/grizzlysmit/Projects/C++/gzzReadline/resources /home/grizzlysmit/Projects/C++/gzzReadline/resources /home/grizzlysmit/Projects/C++/gzzReadline/resources/build /home/grizzlysmit/Projects/C++/gzzReadline/resources/build /home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles/gzz_readline.dir/DependInfo.cmake "--color=$(COLOR)" gzz_readline
 .PHONY : CMakeFiles/gzz_readline.dir/depend
 

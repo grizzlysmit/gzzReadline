@@ -1,4 +1,4 @@
-# Install script for directory: /home/grizzlysmit/Projects/C++/gzzReadline
+# Install script for directory: /home/grizzlysmit/Projects/C++/gzzReadline/resources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -55,8 +55,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/grizzlysmit/Projects/C++/gzzReadline/build/libgzz_readline.so.0.0.2"
-    "/home/grizzlysmit/Projects/C++/gzzReadline/build/libgzz_readline.so.0"
+    "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/libgzz_readline.so.0.0.2"
+    "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/libgzz_readline.so.0"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.0.0.2"
@@ -72,25 +72,25 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/grizzlysmit/Projects/C++/gzzReadline/build/libgzz_readline.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/libgzz_readline.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/grizzlysmit/Projects/C++/gzzReadline/build/gzz_readline.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/gzz_readline.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gzz_readline" TYPE FILE FILES "/home/grizzlysmit/Projects/C++/gzzReadline/build/changelog.gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gzz_readline" TYPE FILE FILES "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/changelog.gz")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/grizzlysmit/Projects/C++/gzzReadline/build/install_local_manifest.txt"
+  file(WRITE "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -106,6 +106,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/grizzlysmit/Projects/C++/gzzReadline/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

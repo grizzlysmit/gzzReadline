@@ -33,10 +33,9 @@
         "source/gzz_readline.pc.in",
         "source/gzz_rlprivate.c",
         "source/gzz_rlprivate.h",
-        "libgzz_readline.so.0.0.1",
-        "libgzz_readline.so.0.0.2",
-        "libgzz_readline.so.0",
-        "libgzz_readline.so"
+        "build/libgzz_readline.so.0.0.2",
+        "build/libgzz_readline.so.0",
+        "build/libgzz_readline.so"
     ], 
     "bin": {
         "Gzz::Readline.rakudoc": "rakulib/Gzz/Readline.rakudoc"
@@ -62,7 +61,8 @@
     ],
     "builder": "Distribution::Builder::Cmake",
     "build": {
-        "lib": "gzz_readline",
+        "lib"    : "gzz_readline",
+        "install": "/usr/local/lib",
         "src-dir": "resources"
     }
 }

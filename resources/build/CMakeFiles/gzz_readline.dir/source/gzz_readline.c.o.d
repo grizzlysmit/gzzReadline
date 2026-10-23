@@ -1,7 +1,7 @@
 CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o: \
- /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.c \
+ /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.c \
  /usr/x86_64-linux-gnu/include/stdc-predef.h \
- /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_rlprivate.h \
+ /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_rlprivate.h \
  /usr/include/readline/rlconf.h /usr/include/readline/rlstdc.h \
  /usr/include/readline/readline.h /usr/x86_64-linux-gnu/include/stdio.h \
  /usr/x86_64-linux-gnu/include/bits/libc-header-start.h \
@@ -40,7 +40,7 @@ CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o: \
  /usr/x86_64-linux-gnu/include/bits/setjmp.h \
  /usr/x86_64-linux-gnu/include/bits/types/struct___jmp_buf_tag.h \
  /usr/x86_64-linux-gnu/include/bits/types/__sigset_t.h \
- /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.h \
+ /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.h \
  /usr/x86_64-linux-gnu/include/stdlib.h \
  /usr/x86_64-linux-gnu/include/bits/waitflags.h \
  /usr/x86_64-linux-gnu/include/bits/waitstatus.h \

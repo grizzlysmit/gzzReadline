@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/grizzlysmit/Projects/C++/gzzReadline
+CMAKE_SOURCE_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/build
+CMAKE_BINARY_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/resources/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -88,14 +88,14 @@ clean: CMakeFiles/changelog.dir/clean
 CMakeFiles/gzz_readline.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gzz_readline.dir/build.make CMakeFiles/gzz_readline.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gzz_readline.dir/build.make CMakeFiles/gzz_readline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=2,3,4 "Built target gzz_readline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=2,3,4 "Built target gzz_readline"
 .PHONY : CMakeFiles/gzz_readline.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gzz_readline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gzz_readline.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles 0
 .PHONY : CMakeFiles/gzz_readline.dir/rule
 
 # Convenience name for target.
@@ -105,7 +105,7 @@ gzz_readline: CMakeFiles/gzz_readline.dir/rule
 # codegen rule for target.
 CMakeFiles/gzz_readline.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gzz_readline.dir/build.make CMakeFiles/gzz_readline.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=2,3,4 "Finished codegen for target gzz_readline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=2,3,4 "Finished codegen for target gzz_readline"
 .PHONY : CMakeFiles/gzz_readline.dir/codegen
 
 # clean rule for target.
@@ -120,14 +120,14 @@ CMakeFiles/gzz_readline.dir/clean:
 CMakeFiles/changelog.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/changelog.dir/build.make CMakeFiles/changelog.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/changelog.dir/build.make CMakeFiles/changelog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=1 "Built target changelog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=1 "Built target changelog"
 .PHONY : CMakeFiles/changelog.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/changelog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/changelog.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles 0
 .PHONY : CMakeFiles/changelog.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ changelog: CMakeFiles/changelog.dir/rule
 # codegen rule for target.
 CMakeFiles/changelog.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/changelog.dir/build.make CMakeFiles/changelog.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=1 "Finished codegen for target changelog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=1 "Finished codegen for target changelog"
 .PHONY : CMakeFiles/changelog.dir/codegen
 
 # clean rule for target.

@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/grizzlysmit/Projects/C++/gzzReadline/CMakeLists.txt"
+  "/home/grizzlysmit/Projects/C++/gzzReadline/resources/CMakeLists.txt"
   "CMakeFiles/4.2.3/CMakeCCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeSystem.cmake"
-  "/home/grizzlysmit/Projects/C++/gzzReadline/contrib/postinst.in"
-  "/home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_readline.pc.in"
+  "/home/grizzlysmit/Projects/C++/gzzReadline/resources/contrib/postinst.in"
+  "/home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_readline.pc.in"
   "/usr/share/cmake-4.2/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake"

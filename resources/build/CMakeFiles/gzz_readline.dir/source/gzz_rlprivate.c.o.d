@@ -1,7 +1,7 @@
 CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o: \
- /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_rlprivate.c \
+ /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_rlprivate.c \
  /usr/x86_64-linux-gnu/include/stdc-predef.h \
- /home/grizzlysmit/Projects/C++/gzzReadline/source/gzz_rlprivate.h \
+ /home/grizzlysmit/Projects/C++/gzzReadline/resources/source/gzz_rlprivate.h \
  /usr/include/readline/rlconf.h /usr/include/readline/rlstdc.h \
  /usr/include/readline/readline.h /usr/x86_64-linux-gnu/include/stdio.h \
  /usr/x86_64-linux-gnu/include/bits/libc-header-start.h \

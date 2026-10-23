@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -Dgzz_readline_EXPORTS
 
-C_INCLUDES = -I/home/grizzlysmit/Projects/C++/gzzReadline/source
+C_INCLUDES = -I/home/grizzlysmit/Projects/C++/gzzReadline/resources/source
 
 C_FLAGS = -fPIC
 

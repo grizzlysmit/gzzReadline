@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/grizzlysmit/Projects/C++/gzzReadline
+CMAKE_SOURCE_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/build
+CMAKE_BINARY_DIR = /home/grizzlysmit/Projects/C++/gzzReadline/resources/build
 
 # Utility rule file for changelog.
 
@@ -68,9 +68,9 @@ include CMakeFiles/changelog.dir/progress.make
 
 CMakeFiles/changelog: changelog.gz
 
-changelog.gz: /home/grizzlysmit/Projects/C++/gzzReadline/changelog
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Compressing changelog"
-	cd /home/grizzlysmit/Projects/C++/gzzReadline && gzip -cn9 /home/grizzlysmit/Projects/C++/gzzReadline/changelog > /home/grizzlysmit/Projects/C++/gzzReadline/build/changelog.gz
+changelog.gz: /home/grizzlysmit/Projects/C++/gzzReadline/resources/changelog
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Compressing changelog"
+	cd /home/grizzlysmit/Projects/C++/gzzReadline/resources && gzip -cn9 /home/grizzlysmit/Projects/C++/gzzReadline/resources/changelog > /home/grizzlysmit/Projects/C++/gzzReadline/resources/build/changelog.gz
 
 CMakeFiles/changelog.dir/codegen:
 .PHONY : CMakeFiles/changelog.dir/codegen
@@ -89,6 +89,6 @@ CMakeFiles/changelog.dir/clean:
 .PHONY : CMakeFiles/changelog.dir/clean
 
 CMakeFiles/changelog.dir/depend:
-	cd /home/grizzlysmit/Projects/C++/gzzReadline/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/grizzlysmit/Projects/C++/gzzReadline /home/grizzlysmit/Projects/C++/gzzReadline /home/grizzlysmit/Projects/C++/gzzReadline/build /home/grizzlysmit/Projects/C++/gzzReadline/build /home/grizzlysmit/Projects/C++/gzzReadline/build/CMakeFiles/changelog.dir/DependInfo.cmake "--color=$(COLOR)" changelog
+	cd /home/grizzlysmit/Projects/C++/gzzReadline/resources/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/grizzlysmit/Projects/C++/gzzReadline/resources /home/grizzlysmit/Projects/C++/gzzReadline/resources /home/grizzlysmit/Projects/C++/gzzReadline/resources/build /home/grizzlysmit/Projects/C++/gzzReadline/resources/build /home/grizzlysmit/Projects/C++/gzzReadline/resources/build/CMakeFiles/changelog.dir/DependInfo.cmake "--color=$(COLOR)" changelog
 .PHONY : CMakeFiles/changelog.dir/depend
 
