@@ -1,3 +1,5 @@
+use P5readlink;
+
 class Build {
     method build($dist-path) {
         # do build stuff to your module
@@ -5,7 +7,7 @@ class Build {
         my IO::Path $CWD = $*CWD;
         my Str:D $path  = "/usr/lib/perl6/site/bin";
         my Str:D $local = "/usr/local";
-        chdir($path.IO);
+        #chdir($path.IO);
         my Proc $r = run 'raku',    '--doc=Man',  "Gzz::Readline.rakudoc",  :out;
         my $man-content = $r.out.slurp: :close;
         "$local/share/man".IO.mkdir();
@@ -25,7 +27,7 @@ class Build {
         $r = run         'make', 'all';
         $r = run         'make', 'package';
 
-        my @debs =       dir('.', test => { "./$_".IO.f && $_ ~~ rx/ ^^ 'gzz_readline' .* '.deb' $$ / })
+        my @debs =       dir('.', test => { "./$_".IO.f && $_ ~~ rx/ ^^ 'gzz_readline' .* '.deb' $$ / }) 
                                                               .sort( { 
                                                                         rx/ ^^ 'gzz_readline-' (\d+ [ \. \d+ [ \. \d ]? ]? ) '-' .* '.deb' $$ / 
                                                                             ?? Version.new($0) 
@@ -34,6 +36,22 @@ class Build {
         my $deb  =       @debs.pop();
         $r = run         'dpkg', '--install', "$deb";
         chdir($CWD);
+        my @libs =       dir('.', test => { "./$_".IO.f && $_ ~~ rx/ ^^ 'libgzz_readline.so' .* $$ / }) 
+                                                              .sort( { 
+                                                                        rx/ ^^ 'gzz_readline.so' \. ( \d+ [ \. \d+ [ \. \d ]? ]? ) $$ / 
+                                                                            ?? Version.new($0) 
+                                                                            !! Version.new('0.0.0')
+                                                                     } );
+        my $lib_ =       @libs.pop();
+        for @libs -> $lib {
+            my $name =       $lib_.basename;
+            if $lib ~~ :l {
+                my $target = readlink($lib.path);
+                "$local/lib/$name".IO.symlink($target.IO.basename.IO, :!absolute);
+            } else {
+                $lib.copy: "$local/lib/$name";
+            }
+        }
     }
 }
 
