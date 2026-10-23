@@ -17,10 +17,10 @@
     "email": "grizzly@smit.id.au"
     },
     "provides": {
-        "Gzz::Readline":    "lib/Gzz/Readline.rakumod",
+        "Gzz::Readline":            "lib/Gzz/Readline.rakumod",
         "libgzz_readline.so.0.0.2": "build/libgzz_readline.so.0.0.2",
-        "libgzz_readline.so.0": "build/libgzz_readline.so.0.0.2",
-        "libgzz_readline.so": "build/libgzz_readline.so.0"
+        "libgzz_readline.so.0":     "build/libgzz_readline.so.0.0.2",
+        "libgzz_readline.so":       "build/libgzz_readline.so.0"
     },
     "resources": [
     ], 
