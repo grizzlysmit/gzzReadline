@@ -22,6 +22,7 @@ class Build {
         $r = run         'apt-get', 'reinstall',  '--yes', "cmake";
         $r = run         'apt-get', 'reinstall',  '--yes', "make";
         $r = run         'apt-get', 'reinstall',  '--yes', "g++";
+        #`«««
         chdir($CWD);
         chdir("build".IO);
         $r = run         'cmake', '..';
@@ -54,6 +55,7 @@ class Build {
                 $lib.copy: "$local/lib/$name";
             }
         }
+        #»»»
     }
 }
 
