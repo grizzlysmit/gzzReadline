@@ -7,20 +7,22 @@ class Build {
         my IO::Path $CWD = $*CWD;
         my Str:D $path  = "/usr/lib/perl6/site/bin";
         my Str:D $local = "/usr/local";
-        #chdir($path.IO);
-        my Proc $r = run 'raku',    '--doc=Man',  "Gzz::Readline.rakudoc",  :out;
+        my Proc $r = run 'raku',    '--doc=Man',  "doc/Gzz/Readline.rakudoc",  :out;
         my $man-content = $r.out.slurp: :close;
         "$local/share/man".IO.mkdir();
         "$local/share/man/Gzz::Readline.1".IO.spurt($man-content);
-        $r = run         'raku',    '--doc=HTML', "Gzz::Readline.rakudoc",  :out;
+        $r = run         'raku',    '--doc=HTML', "doc/Gzz/Readline.rakudoc",  :out;
         my $html-content = $r.out.slurp: :close;
         "$local/share/html".IO.mkdir();
         "$local/share/html/Gzz::Readline.html".IO.spurt($html-content);
 
+        #chdir($path.IO);
+        #$r = run         'ln', '-sf',  'lib/Gzz/Readline.rakumod', "/usr/lib/perl6/site/Gzz/Readline.rakumod";
         $r = run         'apt-get', 'reinstall',  '--yes', "build-essential";
         $r = run         'apt-get', 'reinstall',  '--yes', "cmake";
         $r = run         'apt-get', 'reinstall',  '--yes', "make";
         $r = run         'apt-get', 'reinstall',  '--yes', "g++";
+        chdir($CWD);
         chdir("build".IO);
         $r = run         'cmake', '..';
         $r = run         'make';
