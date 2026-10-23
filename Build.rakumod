@@ -22,8 +22,7 @@ class Build {
         $r = run         'apt-get', 'reinstall',  '--yes', "cmake";
         $r = run         'apt-get', 'reinstall',  '--yes', "make";
         $r = run         'apt-get', 'reinstall',  '--yes', "g++";
-        #`«««
-        chdir($CWD);
+        #chdir($CWD);
         chdir("build".IO);
         $r = run         'cmake', '..';
         $r = run         'make';
@@ -37,8 +36,9 @@ class Build {
                                                                             !! Version.new('0.0.0')
                                                                      } );
         my $deb  =       @debs.pop();
+        dd @debs, $deb;
         $r = run         'dpkg', '--install', "$deb";
-        chdir($CWD);
+        #«««
         my @libs =       dir('.', test => { "./$_".IO.f && $_ ~~ rx/ ^^ 'libgzz_readline.so' .* $$ / }) 
                                                               .sort( { 
                                                                         rx/ ^^ 'gzz_readline.so' \. ( \d+ [ \. \d+ [ \. \d ]? ]? ) $$ / 
@@ -46,6 +46,7 @@ class Build {
                                                                             !! Version.new('0.0.0')
                                                                      } );
         my $lib_ =       @libs.pop();
+        dd @libs, $lib_;
         for @libs -> $lib {
             my $name =       $lib.basename;
             if $lib ~~ :l {
@@ -56,6 +57,7 @@ class Build {
             }
         }
         #»»»
+        chdir($CWD);
     }
 }
 
