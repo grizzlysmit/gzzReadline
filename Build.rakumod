@@ -7,11 +7,11 @@ class Build {
         my IO::Path $CWD = $*CWD;
         my Str:D $path  = "/usr/lib/perl6/site/bin";
         my Str:D $local = "/usr/local";
-        my Proc $r = run 'raku',    '--doc=Man',  "doc/Gzz/Readline.rakudoc",  :out;
+        my Proc $r = run 'raku',    '--doc=Man',  "lib/Gzz/Readline.rakulib",  :out;
         my $man-content = $r.out.slurp: :close;
         "$local/share/man".IO.mkdir();
         "$local/share/man/Gzz::Readline.1".IO.spurt($man-content);
-        $r = run         'raku',    '--doc=HTML', "doc/Gzz/Readline.rakudoc",  :out;
+        $r = run         'raku',    '--doc=HTML', "lib/Gzz/Readline.rakulib",  :out;
         my $html-content = $r.out.slurp: :close;
         "$local/share/html".IO.mkdir();
         "$local/share/html/Gzz::Readline.html".IO.spurt($html-content);
