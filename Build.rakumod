@@ -19,6 +19,20 @@ class Build {
         $r = run         'apt-get', 'reinstall',  '--yes', "cmake";
         $r = run         'apt-get', 'reinstall',  '--yes', "make";
         $r = run         'apt-get', 'reinstall',  '--yes', "g++";
+        chdir("build".IO);
+        $r = run         'cmake', '..';
+        $r = run         'make';
+        $r = run         'make', 'all';
+        $r = run         'make', 'package';
+
+        my @debs =       dir('.', test => { "./$_".IO.f && $_ ~~ rx/ ^^ 'gzz_readline' .* '.deb' $$ / })
+                                                              .sort( { 
+                                                                        rx/ ^^ 'gzz_readline-' (\d+ [ \. \d+ [ \. \d ]? ]? ) '-' .* '.deb' $$ / 
+                                                                            ?? Version.new($0) 
+                                                                            !! Version.new('0.0.0')
+                                                                     } );
+        my $deb  =       @debs.pop();
+        $r = run         'dpkg', '--install', "$deb";
         chdir($CWD);
     }
 }

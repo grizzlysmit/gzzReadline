@@ -8,7 +8,7 @@ file(REMOVE_RECURSE
   "libgzz_readline.pdb"
   "libgzz_readline.so"
   "libgzz_readline.so.0"
-  "libgzz_readline.so.0.0.1"
+  "libgzz_readline.so.0.0.2"
 )
 
 # Per-language clean rules from dependency scanning.
