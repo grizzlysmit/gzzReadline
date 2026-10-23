@@ -1,4 +1,4 @@
-unit module Gzz::Readline:ver<0.1.16>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
+unit module Gzz::Readline:ver<0.1.17>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
 use NativeCall;
 
 =begin pod
@@ -20,7 +20,7 @@ Table of Contents
 
 =NAME Gzz::Readline 
 =AUTHOR Francis Grizzly Smit (grizzly@smit.id.au)
-=VERSION 0.1.16
+=VERSION 0.1.17
 =TITLE Gzz::Readline
 =SUBTITLE A Raku module to do basic prompting with editing and like readline but with the ability to prefill the value.
 
@@ -36,7 +36,6 @@ A Raku module to do basic prompting with editing and like readline but with the 
 
 B<NB: I use the NativeCall module to get at a C library C<gzz_readline.so> which is a fork of
 the C<readline> library, I had to fork it as it doesn't normally allow you to prefill the value>
-L<See gzzReadline|https://github.com/grizzlysmit/gzzReadline>.
 
 =head2 NOTE: This prompt package is based on gnu readline.
 
