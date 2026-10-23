@@ -1,4 +1,4 @@
-unit module Gzz::Readline:ver<0.1.12>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
+unit module Gzz::Readline:ver<0.1.13>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
 use NativeCall;
 
 =begin pod

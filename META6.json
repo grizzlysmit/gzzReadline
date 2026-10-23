@@ -8,7 +8,7 @@
     ],
     "description"   : "Extension to Gnu Readline to get a prompt with a default value",
     "license": "LGPL-3.0-or-later",
-    "version": "0.1.12",
+    "version": "0.1.13",
     "perl": "6.d",
     "source-url": "https://github.com/grizzlysmit/gzzReadline.git",
     "support": {
@@ -17,12 +17,14 @@
     "email": "grizzly@smit.id.au"
     },
     "provides": {
-        "Gzz::Readline":            "lib/Gzz/Readline.rakumod",
-        "libgzz_readline.so.0.0.2": "build/libgzz_readline.so.0.0.2",
-        "libgzz_readline.so.0":     "build/libgzz_readline.so.0.0.2",
-        "libgzz_readline.so":       "build/libgzz_readline.so.0"
+        "Gzz::Readline":            "lib/Gzz/Readline.rakumod"
     },
     "resources": [
+        "CMakeLists.txt",
+        "libgzz_readline.so.0.0.1",
+        "libgzz_readline.so.0.0.2",
+        "libgzz_readline.so.0",
+        "libgzz_readline.so"
     ], 
     "bin": {
         "Gzz::Readline.rakudoc": "rakulib/Gzz/Readline.rakudoc"
