@@ -406,6 +406,23 @@ hr {
 <h2 id="class_Gzz_readline"><a class="u" href="#___top" title="go to top of document">class Gzz_readline</a></h2>
 <pre class="pod-block-code">class Gzz_readline is export 
 
+   sub LIBGZZ_READLINE {
+        ....
+        .....
+    }
+
+    #
+    # gzz_readline functions.
+    #
+    sub gzzreadline( Str, Str ) is export returns Str
+        is native( LIBGZZ_READLINE ) { * }
+
+    method gzzreadline(Str:D $prompt, Str:D $prefill) returns Str {
+        gzzreadline( $prompt, $prefill )
+    }
+
+}
+
 </pre>
 <p><a href="#table-of-contents">Top of Document</a></p>
 

@@ -30,7 +30,7 @@ Francis Grizzly Smit (grizzly@smit.id.au)
 VERSION
 =======
 
-0.1.17
+0.1.18
 
 TITLE
 =====
@@ -65,7 +65,24 @@ class Gzz_readline
 ------------------
 
 ```raku
-class Gzz_readline is export
+class Gzz_readline is export 
+
+   sub LIBGZZ_READLINE {
+        ....
+        .....
+    }
+
+    #
+    # gzz_readline functions.
+    #
+    sub gzzreadline( Str, Str ) is export returns Str
+        is native( LIBGZZ_READLINE ) { * }
+
+    method gzzreadline(Str:D $prompt, Str:D $prefill) returns Str {
+        gzzreadline( $prompt, $prefill )
+    }
+
+}
 ```
 
 [Top of Document](#table-of-contents)

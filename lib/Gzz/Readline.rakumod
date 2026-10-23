@@ -1,4 +1,4 @@
-unit module Gzz::Readline:ver<0.1.17>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
+unit module Gzz::Readline:ver<0.1.18>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
 use NativeCall;
 
 =begin pod
@@ -20,7 +20,7 @@ Table of Contents
 
 =NAME Gzz::Readline 
 =AUTHOR Francis Grizzly Smit (grizzly@smit.id.au)
-=VERSION 0.1.17
+=VERSION 0.1.18
 =TITLE Gzz::Readline
 =SUBTITLE A Raku module to do basic prompting with editing and like readline but with the ability to prefill the value.
 
@@ -48,6 +48,23 @@ It's licence is GPL v3 or above, enjoy.
 =begin code :lang<raku>
 
 class Gzz_readline is export 
+
+   sub LIBGZZ_READLINE {
+        ....
+        .....
+    }
+
+    #
+    # gzz_readline functions.
+    #
+    sub gzzreadline( Str, Str ) is export returns Str
+        is native( LIBGZZ_READLINE ) { * }
+
+    method gzzreadline(Str:D $prompt, Str:D $prefill) returns Str {
+        gzzreadline( $prompt, $prefill )
+    }
+
+}
 
 =end code
 

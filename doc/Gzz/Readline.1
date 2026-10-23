@@ -40,7 +40,7 @@ Gzz::Readline
 .SH "AUTHOR"
 Francis Grizzly Smit (grizzly@smit\&.id\&.au)
 .SH "VERSION"
-0\&.1\&.17
+0\&.1\&.18
 .SH "TITLE"
 Gzz::Readline
 .SH "SUBTITLE"
@@ -62,6 +62,23 @@ I have modified the \fBReadline\fR \fBC\fR code to provide the required \&.so fi
 .RS 4m
 .EX
 class Gzz_readline is export 
+
+   sub LIBGZZ_READLINE {
+        \&.\&.\&.\&.
+        \&.\&.\&.\&.\&.
+    }
+
+    #
+    # gzz_readline functions\&.
+    #
+    sub gzzreadline( Str, Str ) is export returns Str
+        is native( LIBGZZ_READLINE ) { * }
+
+    method gzzreadline(Str:D $prompt, Str:D $prefill) returns Str {
+        gzzreadline( $prompt, $prefill )
+    }
+
+}
 
 
 .EE
