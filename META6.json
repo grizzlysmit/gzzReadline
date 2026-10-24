@@ -8,13 +8,13 @@
     ],
     "description"   : "Extension to Gnu Readline to get a prompt with a default value",
     "license": "LGPL-3.0-or-later",
-    "version": "0.1.25",
+    "version": "0.1.26",
     "perl": "6.d",
     "source-url": "https://github.com/grizzlysmit/gzzReadline.git",
     "support": {
-    "bugtracker": "https://github.com/grizzlysmit/gzzReadline/issues",
-    "source":     "https://github.com/grizzlysmit/gzzReadline.git",
-    "email": "grizzly@smit.id.au"
+        "bugtracker": "https://github.com/grizzlysmit/gzzReadline/issues",
+        "source":     "https://github.com/grizzlysmit/gzzReadline.git",
+        "email": "grizzly@smit.id.au"
     },
     "provides": {
         "Gzz::Readline":            "lib/Gzz/Readline.rakumod"
@@ -35,10 +35,10 @@
         "docs/Gzz/README.md"
     ], 
     "bin": {
-        "Gzz::Readline.rakudoc": "rakulib/Gzz/Readline.rakudoc"
+        "Gzz::Readline.rakudoc": "doc/Gzz/Readline.rakudoc"
     },
     "depends": [
-        "Distribution::Builder::Cmake",
+        "Distribution::Builder::Cmake-alt",
         "P5readlink",
         "Pod::To::HTML", 
         "Pod::To::Man",
@@ -56,10 +56,15 @@
         "terminal",
         "C"
     ],
-    "builder": "Distribution::Builder::Cmake",
+    "builder": "Distribution::Builder::Cmake-alt",
     "build": {
         "lib"    : "gzz_readline",
         "install": "/usr/local/lib",
-        "src-dir": "resources"
+        "src-dir": "resources",
+        "master-lib-version": "0.0.2",
+        "lib-versions": {
+            "0": "0.0.2",
+            "": "0"
+        }
     }
 }

@@ -1,4 +1,4 @@
-unit module Gzz::Readline:ver<0.1.25>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
+unit module Gzz::Readline:ver<0.1.26>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
 use NativeCall;
 
 =begin pod
@@ -20,7 +20,7 @@ Table of Contents
 
 =NAME Gzz::Readline 
 =AUTHOR Francis Grizzly Smit (grizzly@smit.id.au)
-=VERSION 0.1.25
+=VERSION 0.1.26
 =TITLE Gzz::Readline
 =SUBTITLE A Raku module to do basic prompting with editing and like readline but with the ability to prefill the value.
 
@@ -77,7 +77,7 @@ class Gzz_readline is export {
 
     sub LIBGZZ_READLINE {
         my $library = 'gzz_readline';
-        my $library-match = rx/:i libgzz_readline\.so\.(\d+) $/;
+        my $library-match = rx/:i ^^ 'libgzz_readline.so' [ \. (\d+ [ \. \d+ [ \. \d+ ]? ]? ) ]? $$ /;
         my $version = v0;
 
         # Collect library paths from arbitrary OSen to search.
@@ -120,7 +120,7 @@ class Gzz_readline is export {
             next unless @dir;
 
             @dir[*-1] ~~ $library-match;
-            $version = Version.new( ( $0 ) );
+            $version = Version.new( ( $0 ) ) with $0;
             last;
         }
 
