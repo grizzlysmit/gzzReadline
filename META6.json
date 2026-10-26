@@ -8,7 +8,7 @@
     ],
     "description"   : "Extension to Gnu Readline to get a prompt with a default value",
     "license": "LGPL-3.0-or-later",
-    "version": "0.1.27",
+    "version": "0.1.28",
     "perl": "6.d",
     "source-url": "https://github.com/grizzlysmit/gzzReadline.git",
     "support": {
@@ -60,7 +60,7 @@
     "build": {
         "lib"    : "gzz_readline",
         "install": "/usr/local/lib",
-        "src-dir": "resources",
+        "src-dir": ".",
         "master-lib-version": "0.0.2",
         "lib-versions": {
             "0": "0.0.2",
