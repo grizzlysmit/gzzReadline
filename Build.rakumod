@@ -58,12 +58,12 @@ class Build {
                 $lib.copy: "$local/lib/$name";
             }
         }
-        #»»»
         chdir('/usr/local/lib'.IO);
         my $lib = 'libgzz_readline.so';
         "{$lib}.0".IO.symlink("{$lib}.0.0.2".IO, :!absolute);
         "{$lib}".IO.symlink("{$lib}.0".IO, :!absolute);
         chdir($CWD);
+        #»»»
     }
 }
 
