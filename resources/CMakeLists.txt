@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.11)
 
 # Specify the project info.
 project(gzz_readline
-        VERSION 0.0.2
+        VERSION 1.0.0
         DESCRIPTION "Extension to Gnu Readline to get a prompt with a default value"
         LANGUAGES "C")
 
