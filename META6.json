@@ -67,6 +67,7 @@
             "": "0"
         },
         "source": "source",
-        "debug": false
+        "log":    "/dev/tty",
+        "debug":  false
     }
 }
