@@ -5,4 +5,5 @@
 *.so.*
 archive/
 lib/.precomp/
+resources/build/_CPack_Packages/
 
