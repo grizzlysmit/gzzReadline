@@ -1,4 +1,4 @@
-libgzz_readline.so.0.0.2: \
+libgzz_readline.so.1.0.0: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/lib/../lib/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o \

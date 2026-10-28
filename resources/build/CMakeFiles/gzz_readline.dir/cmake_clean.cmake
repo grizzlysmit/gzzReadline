@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  ".0"
+  ".1"
   "CMakeFiles/gzz_readline.dir/link.d"
   "CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o"
   "CMakeFiles/gzz_readline.dir/source/gzz_readline.c.o.d"
@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gzz_readline.dir/source/gzz_rlprivate.c.o.d"
   "libgzz_readline.pdb"
   "libgzz_readline.so"
-  "libgzz_readline.so.0"
-  "libgzz_readline.so.0.0.2"
+  "libgzz_readline.so.1"
+  "libgzz_readline.so.1.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

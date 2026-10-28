@@ -4,7 +4,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: gzz_readline
 Description: Extension to Gnu Readline to get a prompt with a default value
-Version: 0.0.2
+Version: 1.0.0
 Requires:
 Libs: -L${libdir} -lgzz_readline
 Cflags: -I${includedir}

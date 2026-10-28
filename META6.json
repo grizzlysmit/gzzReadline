@@ -63,7 +63,7 @@
         "src-dir": "resources",
         "master-lib-version": "0.0.2",
         "lib-versions": {
-            "1": "1.0.0",
+            "1": "1.0.1",
             "": "1"
         },
         "source": "source",

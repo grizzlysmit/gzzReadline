@@ -44,8 +44,8 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.0.0.2"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.1.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.1"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -55,12 +55,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/libgzz_readline.so.0.0.2"
-    "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/libgzz_readline.so.0"
+    "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/libgzz_readline.so.1.0.0"
+    "/home/grizzlysmit/Projects/C++/gzzReadline/resources/build/libgzz_readline.so.1"
     )
   foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.0.0.2"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.1.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgzz_readline.so.1"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
