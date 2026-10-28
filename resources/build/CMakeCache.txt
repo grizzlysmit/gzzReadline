@@ -283,7 +283,7 @@ gzz_readline_BINARY_DIR:STATIC=/home/grizzlysmit/Projects/C++/gzzReadline/resour
 gzz_readline_IS_TOP_LEVEL:STATIC=ON
 
 //Dependencies for the target
-gzz_readline_LIB_DEPENDS:STATIC=general;libreadline.so.0;
+gzz_readline_LIB_DEPENDS:STATIC=general;libreadline.so.1;
 
 //Value Computed by CMake
 gzz_readline_SOURCE_DIR:STATIC=/home/grizzlysmit/Projects/C++/gzzReadline/resources

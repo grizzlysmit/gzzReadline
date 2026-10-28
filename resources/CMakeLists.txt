@@ -16,7 +16,7 @@ add_library(${PROJECT_NAME} SHARED
 
 #add_dependencies(gzz_readline libreadline.so.0)
 
-target_link_libraries(gzz_readline libreadline.so.0)
+target_link_libraries(gzz_readline libreadline.so.1)
 
 # Configure the directories to search for header files.
 target_include_directories(${PROJECT_NAME} PRIVATE source)
