@@ -1,4 +1,4 @@
-unit module Gzz::Readline:ver<1.0.2>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
+unit module Gzz::Readline:ver<1.0.3>:auth<Francis Grizzly Smit (grizzly@smit.id.au)>;
 use NativeCall;
 
 =begin pod
@@ -20,7 +20,7 @@ Table of Contents
 
 =NAME Gzz::Readline 
 =AUTHOR Francis Grizzly Smit (grizzly@smit.id.au)
-=VERSION 1.0.2
+=VERSION 1.0.3
 =TITLE Gzz::Readline
 =SUBTITLE A Raku module to do basic prompting with editing and like readline but with the ability to prefill the value.
 
