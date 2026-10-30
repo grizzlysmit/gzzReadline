@@ -2,7 +2,7 @@
     "name": "Gzz::Readline",
     "lib": "lib",
     "markpown-path": "README.md",
-    "markpown-path-alt": "resources/docs/README.md",
+    "markdown-path-alt": "resources/docs/README.md",
     "docs": "resources/docs",
     "exts": [
         "rakumod"
