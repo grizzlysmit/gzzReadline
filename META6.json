@@ -8,7 +8,7 @@
     ],
     "description"   : "Extension to Gnu Readline to get a prompt with a default value",
     "license": "LGPL-3.0-or-later",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "perl": "6.d",
     "source-url": "https://github.com/grizzlysmit/gzzReadline.git",
     "support": {
@@ -29,10 +29,12 @@
         "source/gzz_readline.pc.in",
         "source/gzz_rlprivate.c",
         "source/gzz_rlprivate.h",
-        "docs/Gzz/Readline.1",
+        "docs/Gzz/Readline.3",
         "docs/Gzz/Readline.html",
         "docs/Gzz/Readline.rakudoc",
-        "docs/Gzz/README.md"
+        "docs/Gzz/README.md",
+        "docs/Gzz/Readline.1",
+        "docs/Gzz/Readline.html"
     ], 
     "bin": {
         "Gzz::Readline.rakudoc": "doc/Gzz/Readline.rakudoc"
@@ -60,12 +62,20 @@
     "build": {
         "lib"    : "gzz_readline",
         "install": "/usr/local/lib",
+        "install-local": "$*HOME/lib",
         "src-dir": "resources",
         "master-lib-version": "1.0.0",
         "lib-versions": {
             "1": "1.0.0",
             "": "1"
         },
+        "man-number" : "3",
+        "man"    : "resources/docs/Gzz/Reaedline.$man-number",
+        "man-install" : "/usr/local/man/man$man-number/Gzz::Readline.$man-number",
+        "man-install-local" : "$*HOME/man/man$man-number/Gzz::Readline.$man-number",
+        "html" : "resources/docs/Gzz/Readline.html",
+        "html-install" : "/usr/local/share/html/Gzz::Readline.html",
+        "html-install-local" : "$HOME/html/Gzz::Readline.html",
         "source": "source",
         "log":    "/dev/tty",
         "debug":  true
