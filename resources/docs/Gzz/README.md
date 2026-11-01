@@ -30,7 +30,7 @@ Francis Grizzly Smit (grizzly@smit.id.au)
 VERSION
 =======
 
-1.0.14
+1.0.15
 
 TITLE
 =====
