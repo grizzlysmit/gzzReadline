@@ -8,7 +8,7 @@
     ],
     "description"   : "Extension to Gnu Readline to get a prompt with a default value",
     "license": "LGPL-3.0-or-later",
-    "version": "1.0.19",
+    "version": "1.0.20",
     "perl": "6.d",
     "source-url":     "https://github.com/grizzlysmit/gzzReadline.git",
     "support": {
@@ -81,7 +81,7 @@
         "markdown-path-install" : "/usr/local/share/Gzz::Readline/README.md",
         "markdown-path-install-local" : "$HOME/docs/Gzz::Readline/README.md",
         "source": "source",
-        "log":    "/dev/tty",
-        "debug":  true
+        "log":    "/dev/null",
+        "debug":  false
     }
 }
